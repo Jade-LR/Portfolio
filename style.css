@@ -69,7 +69,7 @@ section {
 body {
     text-align: center;
 }
-.competence:hover {
+.competence:hover, .projet:hover {
     transform: translateY(-5px);
 }
 .stage {
