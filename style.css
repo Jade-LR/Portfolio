@@ -164,3 +164,12 @@ body {
     width: 100%;
     }
 }
+.photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 50%;
+    border: 3px solid #6C3FE8;
+    margin-top: 12px;
+}
