@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
         <title>Portfolio de Jade</title>
     </head>
+    <script>
+    const version = Date.now();
+
+    document.querySelectorAll('link[rel="stylesheet"]').forEach(lien => {
+        lien.href = lien.href.split("?")[0] + "?v=" + version;
+    });
+
+    document.querySelectorAll("img").forEach(image => {
+        image.src = image.src.split("?")[0] + "?v=" + version;
+    });
+
+    document.querySelectorAll('a[href$=".pdf"], a[href*=".pdf?"]').forEach(lien => {
+        lien.href = lien.href.split("?")[0] + "?v=" + version;
+    });
+</script>
     <body>
         <nav class="menu">
             <a href="index.html">Accueil</a>
