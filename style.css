@@ -1,0 +1,166 @@
+p {
+    color: #7d19ab;
+}
+h1 {
+    color: #6C3FE8;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.menu {
+    background-color: #ffcc00;
+    padding: 20px;
+    border-radius: 15px;
+}
+.menu a {
+    margin-right: 20px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #fbdd67;
+    border-radius: 15px;
+}
+.menu a:link, .menu a:visited {
+    color: #6f1ca7;
+    text-decoration: none;
+    border: 0;
+}
+a:not(.menu a):link, a:not(.menu a):visited {
+    color: #891cdd;
+    text-decoration: none;
+    border: 1px solid #891cdd;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+.menu a:hover, a:hover {
+    color: #e3216c !important;
+}
+section {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(251, 246, 235);
+    padding: 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.description {
+    color: #696969;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 0;
+}
+.competence {
+    background-color: rgb(254, 252, 248);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 30%;
+    border-left: 5px solid #6C3FE8;
+}
+.comp {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+body {
+    text-align: center;
+}
+.competence:hover {
+    transform: translateY(-5px);
+}
+.stage {
+    background-color: #f8e1ef;
+    padding: 1px;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+.formations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+.formation, .coordonnees, .projet {
+    background-color: rgb(254, 252, 248);
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #6C3FE8;
+}
+.formation h2 {
+    color: #6C3FE8;
+    margin-bottom: 10px;
+}
+.formation h3 {
+    color: #891cdd;
+    margin-top: 0;
+}
+.formation:hover {
+    transform: translateY(-3px);
+}
+.contact-formulaire {
+    background-color: rgb(254,252,248);
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #6C3FE8;
+    margin-top: 20px;
+}
+.contact-formulaire form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+.contact-formulaire input, .contact-formulaire textarea {
+    padding: 10px;
+    border: 1px solid #891cdd;
+    border-radius: 10px;
+    font: inherit;
+}
+.contact-formulaire button {
+    background-color: #6C3FE8;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contact-formulaire button:hover {
+    background-color: #891cdd;
+}
+
+@media (max-width: 600px) {
+    .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    }
+    .menu a {
+    margin-right: 0;
+    }
+    h1 {
+    font-size: 28px;
+    }
+    section {
+    padding: 15px;
+    }
+    .comp {
+    flex-direction: column;
+    gap: 10px;
+    }
+    .competence {
+    width: auto;
+    margin-bottom: 0;
+    }
+    .contact-formulaire input, .contact-formulaire textarea {
+    box-sizing: border-box;
+    width: 100%;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Contact - Portfolio de Jade</title>
+    </head>
+    <body>
+        <nav class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="contact.html">Contact</a>
+            <a href="parcours.html">Mon parcours</a>
+            <a href="projets.html">Mes projets</a>
+        </nav>
+        <section>
+        <h1>Me contacter</h1>
+        <p>Vous souhaitez me joindre ? Vous pouvez me contacter par mail ou par téléphone !</p>
+        <div class="coordonnees">
+        <h2>Mes coordonnées</h2>
+        <p>Localisation : Melun (77)</p>
+        <p>Email : <a href="mailto:jlegrandroger@gmail.com"> jlegrandroger@gmail.com</a></p>
+        <p>Téléphone : <a href="tel:0650947061"> 06 50 94 70 61</a></p>
+        <p>GitHub : <a href="https://github.com/Jade-LR" target="_blank"> Jade-LR</a></p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/jade-legrand--roger" target="_blank"> Jade Legrand--Roger</a></p>
+        </div>
+        <div class="contact-formulaire">
+        <h2>Envoyez-moi un message</h2>
+        <form action="https://formspree.io/f/xgaoylrb" method="POST">
+        <label for="nom">Votre nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        <label for="email">Votre email :</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Votre message :</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+        </form>
+        </div>
+        </section>
+    </body>
+</html>
